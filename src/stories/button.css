@@ -70,6 +70,7 @@
 .landscape__image {
   width: 237px;
   height: 257px;
-  object-fit: contain;
+  object-position: center;
+  object-fit: none;
   border-radius: 25px;
 }

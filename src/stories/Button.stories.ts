@@ -60,8 +60,7 @@ export const LongDescription: Story = {
 export const LandscapeImage: Story = {
   args: {
     title: "Landscape Image",
-    description:
-      "This is an extremely long description that should be truncated after a few lines. If the text is too long, it should automatically be clipped and replaced with an ellipsis (...) to prevent overflow.",
+    description: "This is Landscape Image",
     author: "Theresa Graves",
     date: "Feb 20, 2025",
     imageSrc:
