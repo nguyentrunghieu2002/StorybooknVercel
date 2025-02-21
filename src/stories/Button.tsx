@@ -40,8 +40,8 @@ export const Card = ({ onClick, ...props }: CardProps) => {
       />
       <div className={"card__content"}>
         <h2 className="card__title">
-          {props.title.length > 50
-            ? props.title.slice(0, 47) + "..."
+          {props.title.length > 40
+            ? props.title.slice(0, 35) + "..."
             : props.title}
         </h2>
         <p
@@ -50,11 +50,17 @@ export const Card = ({ onClick, ...props }: CardProps) => {
           }`}
         >
           {props.description && (
-            <p className="card__description">{props.description}</p>
+            <p style={{ color: "#7B7A81" }} className="card__description">
+              {props.description}
+            </p>
           )}
         </p>
-        <div className="card__author">{props.author}</div>
-        <div className="card__date">{props.date}</div>
+        <div style={{ color: "#424246" }} className="card__author">
+          {props.author}
+        </div>
+        <div style={{ color: "#7B7A81" }} className="card__date">
+          {props.date}
+        </div>
       </div>
     </div>
   );
