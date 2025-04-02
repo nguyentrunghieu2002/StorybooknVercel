@@ -15,7 +15,8 @@ interface TestimonialProps {
   title: string;
   index: number;
   num: number;
-  setNum: React.Dispatch<React.SetStateAction<number>>;
+  handleNext: () => void;
+  handlePrev: () => void;
 }
 
 const Testimonial = ({
@@ -26,7 +27,8 @@ const Testimonial = ({
   className = "",
   title,
   img,
-  setNum,
+  handleNext,
+  handlePrev,
   num,
 }: TestimonialProps) => {
   console.log(index);
@@ -61,7 +63,11 @@ const Testimonial = ({
           }}
         >
           <TestimonialAuthor name={author} date={date} />
-          <TestimonialButton num={num} setNum={setNum} />
+          <TestimonialButton
+            num={num}
+            handleNext={handleNext}
+            handlePrev={handlePrev}
+          />
         </div>
       </TestimonialContainer>
     </div>

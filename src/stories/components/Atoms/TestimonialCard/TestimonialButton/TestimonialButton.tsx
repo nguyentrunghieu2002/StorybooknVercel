@@ -1,27 +1,27 @@
 import left from "../../../../assets/Chevron Right.png";
 import right from "../../../../assets/Group.png";
-import { testimonialsData } from "../../../Organisms/TestimonialsSection/testimonials.data";
 
 interface TestimonialButton {
-  setNum: React.Dispatch<React.SetStateAction<number>>;
+  handlePrev: () => void;
+  handleNext: () => void;
   num: number;
 }
 
-const TestimonialButton = ({ setNum, num }: TestimonialButton) => {
-  console.log(555, testimonialsData.length - 1);
-  console.log(666, num);
+const TestimonialButton = ({ handlePrev, handleNext }: TestimonialButton) => {
+  // console.log(555, testimonialsData.length - 1);
+  // console.log(666, num);
 
-  const handleNext = () => {
-    num === testimonialsData.length - 1
-      ? setNum(0)
-      : setNum((prev) => prev + 1);
-  };
+  // const handleNext = () => {
+  //   num === testimonialsData.length - 1
+  //     ? setNum(0)
+  //     : setNum((prev) => prev + 1);
+  // };
 
-  const handlePrev = () => {
-    num === 0
-      ? setNum(testimonialsData.length - 1)
-      : setNum((prev) => prev - 1);
-  };
+  // const handlePrev = () => {
+  //   num === 0
+  //     ? setNum(testimonialsData.length - 1)
+  //     : setNum((prev) => prev - 1);
+  // };
 
   return (
     <div

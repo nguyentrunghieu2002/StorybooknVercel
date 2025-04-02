@@ -8,6 +8,18 @@ const TestimonialsPage = () => {
 
   const [num, setNum] = useState(0);
 
+  const handleNext = () => {
+    num === testimonialsData.length - 1
+      ? setNum(0)
+      : setNum((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    num === 0
+      ? setNum(testimonialsData.length - 1)
+      : setNum((prev) => prev - 1);
+  };
+
   return (
     <TestimonialsSection>
       {testimonialsData?.map((item, index) => (
@@ -16,7 +28,8 @@ const TestimonialsPage = () => {
             <Testimonial
               key={index}
               num={num}
-              setNum={setNum}
+              handleNext={handleNext}
+              handlePrev={handlePrev}
               index={index}
               title={item.title}
               quote={item.quote}
