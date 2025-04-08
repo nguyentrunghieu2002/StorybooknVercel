@@ -8,9 +8,6 @@ interface TestimonialButton {
 }
 
 const TestimonialButton = ({ handlePrev, handleNext }: TestimonialButton) => {
-  // console.log(555, testimonialsData.length - 1);
-  // console.log(666, num);
-
   // const handleNext = () => {
   //   num === testimonialsData.length - 1
   //     ? setNum(0)
