@@ -69,7 +69,6 @@ const SectionImage = ({
   index,
 }: SectionImageProps) => {
   if (variant === "expand") {
-    console.log(tag.length);
     return (
       <div
         style={{
