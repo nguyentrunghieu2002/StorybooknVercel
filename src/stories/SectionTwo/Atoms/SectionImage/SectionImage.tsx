@@ -69,6 +69,7 @@ const SectionImage = ({
   index,
 }: SectionImageProps) => {
   if (variant === "expand") {
+    console.log(tag.length);
     return (
       <div
         style={{
@@ -98,6 +99,7 @@ const SectionImage = ({
             bottom: "96px",
             backgroundColor: "#FFAD70",
             borderTopLeftRadius: "10px",
+            maxWidth: "224px",
             borderBottomLeftRadius: "10px",
             position: "absolute",
           }}
@@ -110,9 +112,19 @@ const SectionImage = ({
               lineHeight: "25px",
               margin: 0,
               minHeight: "25px",
+              height: "30px",
             }}
           >
-            {tag}
+            <div
+              style={{
+                overflow: "hidden",
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: "1",
+              }}
+            >
+              {tag}
+            </div>
           </p>
         </div>
       </div>
@@ -150,6 +162,7 @@ const SectionImage = ({
       <div
         style={{
           width: "fit-content",
+
           right: 0,
           bottom: "16px",
           backgroundColor: "#FFAD70",
@@ -159,14 +172,26 @@ const SectionImage = ({
       >
         <p
           style={{
+            minHeight: "25px",
             padding: "16px",
             fontWeight: 700,
             fontSize: "15px",
             lineHeight: "25px",
             margin: 0,
+            maxWidth: "100px",
+            maxHeight: "25px",
           }}
         >
-          {tag}
+          <div
+            style={{
+              overflow: "hidden",
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: "1",
+            }}
+          >
+            {tag}
+          </div>
         </p>
       </div>
     </div>
