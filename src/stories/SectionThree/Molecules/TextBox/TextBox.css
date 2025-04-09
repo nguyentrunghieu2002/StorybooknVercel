@@ -1,0 +1,20 @@
+.link {
+  display: flex;
+  text-decoration: none;
+  /* gap: 15px; */
+  justify-content: space-between;
+}
+
+.link-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.link-img {
+  width: 6px;
+  height: 10px;
+  align-self: center;
+}
