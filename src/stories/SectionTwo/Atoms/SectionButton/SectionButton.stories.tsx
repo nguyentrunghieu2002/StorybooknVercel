@@ -4,7 +4,7 @@ import SectionButton from "./SectionButton";
 import { action } from "@storybook/addon-actions";
 
 const meta: Meta<typeof SectionButton> = {
-  title: "Section3/Atoms/SectionButton",
+  title: "Section2/Atoms/SectionButton",
   component: SectionButton,
 };
 
